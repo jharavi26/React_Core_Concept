@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Counter from './components/useffect';
 import Component from './components/useRef';
+import Memo from './components/useMemo';
 
 function App() {
 
@@ -18,8 +19,8 @@ function App() {
       <h1>All React Hook </h1>
       <p> My name is { flag ? names : ' '}</p>;
       <button onClick={changeName} >Click Me</button>
+      <Memo/>
       <Component />
-      
       < Counter />
     </div>
   );
