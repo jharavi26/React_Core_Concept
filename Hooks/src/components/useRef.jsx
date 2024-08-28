@@ -5,13 +5,20 @@
 
 
 
-import React, {useState, useRef} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 
 function Component() {
     const [name, setName] = useState('');
+    const [counter, setCounter] = useState(0);
     
 
     const inputE1 = useRef(' ');
+    const preCounterRef = useRef(" ");
+
+    useEffect(() => {
+      
+      preCounterRef.current = counter ;
+    }, [counter]);
 
     const resetInput = () =>{
         setName(" ");
@@ -32,6 +39,16 @@ function Component() {
 
         <button onClick={resetInput}>Reset</button>
         <p>My name is {name} </p>
+
+        {/* useRef for Storing Previous state Value  */}
+
+        <div>
+          <h4>Random counter : {counter} </h4>
+          { typeof preCounterRef.current !== "undefined" && (
+            <h5> previous counter : {preCounterRef.current} </h5>
+          )}
+          <button onClick={ (e) => setCounter(Math.ceil(Math.random()*100))}>Generate Number </button>
+        </div>
 
 
 
