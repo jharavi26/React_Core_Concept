@@ -10,7 +10,6 @@ import React, {useState, useRef, useEffect} from 'react'
 function Component() {
     const [name, setName] = useState('');
     const [counter, setCounter] = useState(0);
-    
 
     const inputE1 = useRef(' ');
     const preCounterRef = useRef(" ");
@@ -24,8 +23,6 @@ function Component() {
         setName(" ");
         inputE1.current.focus();
     };
-
-
   return (
     <div>
         <h3>useRef Hook </h3> 
@@ -36,6 +33,9 @@ function Component() {
         value={name}
         onChange={(e) => setName(e.target.value)}
         />
+
+        <hr></hr>
+
 
         <button onClick={resetInput}>Reset</button>
         <p>My name is {name} </p>
@@ -53,6 +53,8 @@ function Component() {
 
 
     </div>
+
+
   )
 }
 
