@@ -6,11 +6,6 @@ function Memo() {
   // Memoizing the factorial calculation
   const result = useMemo(() => factorial(counter), [counter]);
 
-  const [name, setName] = useState("");
-
-
- 
-
   return (
     <div>
       <h1>useMemo Hook Factorial of {counter} is : <span>{result}</span></h1>
@@ -18,28 +13,10 @@ function Memo() {
         <button onClick={() => setCounter(counter + 1)}>Increment</button>
         <button onClick={() => setCounter(counter - 1)}>Decrement</button>
       </div>
-
-      <hr />
-
-      <div>
-        <div>
-          <label>Enter your Name </label>
-        </div>
-        
-        <input
-          type="text"
-          placeholder='Enter your Name'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-
-        <hr/>
-
-
       </div>
-    </div>
-  );
-}
+    );
+
+  }
 
 
 function factorial(n) {
