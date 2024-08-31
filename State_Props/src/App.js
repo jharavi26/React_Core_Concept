@@ -2,6 +2,7 @@
 import './App.css';
 import ProductList from './components';
 import FormHandling from './components/form';
+import DemoForm from './components/form2';
 import FunctionalComponent from './components/functional_component';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <FunctionalComponent />
       <ProductList name="Ravikumar" city="Delhi" />
       <FormHandling />
+      <DemoForm />
      
     </div>
   );
