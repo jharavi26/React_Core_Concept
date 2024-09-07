@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import FComponent from './FComponent';
 import CComponent from './CComponent';
+import { CounterContext } from './CounterContext';
 
 
 function Context() {
@@ -22,9 +23,13 @@ function Context() {
 
         <hr></hr>
 
-        <FComponent counter= {counter} />
+        <CounterContext.Provider value={counter}>
+
+        <FComponent  />
         <hr></hr>
-        <CComponent counter = {counter} />
+        <CComponent />
+
+        </CounterContext.Provider>
 
     </div>
   )
