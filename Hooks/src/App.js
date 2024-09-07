@@ -5,6 +5,7 @@ import Counter from './components/useffect';
 import Component from './components/useRef';
 import Memo from './components/useMemo';
 import ParentComponent from './components/useCallback';
+import Context from './components/useContext';
 
 function App() {
 
@@ -17,14 +18,15 @@ function App() {
 
   return (
     <div>
-       <ParentComponent />
+      <Context />
+       {/* <ParentComponent />
       <h1>All React Hook </h1>
       <p> My name is { flag ? names : ' '}</p>;
       <button onClick={changeName} >Click Me</button>
      
       <Memo/>
       <Component />
-      < Counter />
+      < Counter /> */}
     </div>
   );
 }
