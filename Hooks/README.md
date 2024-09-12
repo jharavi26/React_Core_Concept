@@ -1,3 +1,28 @@
+
+Hook	Usage
+useState:- Manages local state in functional components. Returns a state variable and a function to update it.
+useEffect :- Runs side effects in functional components. Used for data fetching, subscriptions, timers, and DOM manipulation.
+useContext :- 	Provides a way to pass data through the component tree without passing props down manually at every level.
+useReducer :-	Alternative to useState for more complex state logic. Similar to Redux’s reducer pattern.
+useCallback	:-Returns a memoized version of a callback function that only changes if one of the dependencies has changed. Avoids unnecessary re-renders.
+useMemo	:- Memoizes the result of a function to optimize performance, recalculating the result only if dependencies change.
+useRef	:- Creates a mutable object that persists across renders. Often used for accessing DOM elements or keeping track of a value without causing a re-render.
+useImperativeHandle :-	Customizes the instance value that is exposed to parent components when using ref. Often used with forwardRef.
+useLayoutEffect :- 	Similar to useEffect, but runs synchronously after all DOM mutations. Useful for reading layout from the DOM and synchronizing re-renders.
+useDebugValue :-	Displays a label in React DevTools for custom hooks. Helps with debugging.
+useTransition :-	Allows marking a state update as non-urgent to improve UI responsiveness by deferring some updates (used in concurrent rendering).
+useDeferredValue :-	Defers re-rendering of non-urgent updates, improving performance by allowing React to render higher-priority updates first.
+useId	Generates a unique ID to be used for accessibility attributes or IDs in JSX elements.
+useSyncExternalStore	Reads from an external store and subscribes to it, useful when integrating with libraries like Redux.
+useInsertionEffect	Runs synchronously before React makes changes to the DOM, typically used for managing CSS-in-JS libraries.
+ 
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
