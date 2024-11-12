@@ -1,14 +1,12 @@
-
 import './App.css';
-import Profile from './component/profile';
+import Header from './component/Header';
 
 function App() {
   return (
-    <>
-    <h1>Hello Ravikumar Welcome Back After so long time</h1>
-    <Profile text ="Welcome Rajan"/>
-    </>
-   
+    <div>
+      <h1>I am Parent component</h1>
+    <Header name="Ravikumar" age="25"/>
+    </div>
   );
 }
 
