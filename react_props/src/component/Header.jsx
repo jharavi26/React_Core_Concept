@@ -7,11 +7,11 @@ function Header({name, age, city='Bihar'}){           //Modern way to set Defaul
   );
 }
 
-// Header.defaultProps= unique way to set default props
+// Header.defaultProps = {          //unique way to set default props
 //   name:'Rajan',
 //   age:'24',
 //   city:'Delhi'  
-// };
+// };   
 
 export default Header;
 
