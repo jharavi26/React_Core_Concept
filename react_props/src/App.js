@@ -2,10 +2,15 @@ import './App.css';
 import Header from './component/Header';
 
 function App() {
-  return (
+  function handleClick()
+{
+      alert("I am clicked")
+}  
+return (
     <div>
       <h1>I am Parent component</h1>
     <Header name="Ravikumar" age="25"/>
+    <button onClick={handleClick}>Click me </button>
     </div>
   );
 }
