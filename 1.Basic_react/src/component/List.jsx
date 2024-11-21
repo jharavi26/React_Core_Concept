@@ -5,16 +5,21 @@
 
 function List (){
   let foodItems = ['Grain','Rice','Bread','Vegetable','Milk','Salad' ];
+
+  const handleBtn = (item)=>{
+    console.log(`${item} being Bought`)
+  }
+  
   // let foodItems = [ ];
 
   return (
     <>
     <h1>Healthy Foods </h1>
-    {foodItems.length===0?<h3>I am Still Hungry .</h3>:null}
+    {foodItems.length===0?<h3>I am Still Hungry .</h3>:null}      
     <ol className="list-group">
       {foodItems.map(item => (                                  //Simple way to iterate a array
-        <li key={item} className="item-1">{item}</li>
-      ))}
+        <li key={item} className="item-1" >{item}<button style={{backgroundColor:'aqua', float:'right'}} 
+        onClick={()=> handleBtn(item)}>buy</button></li>))}
     </ol>
     </>
   );
