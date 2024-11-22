@@ -3,6 +3,7 @@ import './App.css';
 import Header from './component/Header';
 import List from './component/List';
 import Event from './component/Event';
+import Counter from './Hook/State';
 function App() {
   const name ="Rajan";
   const lastname ="Jha"
@@ -13,6 +14,7 @@ return (
     <Header name="Ravikumar" age="25"/>
     <List/>
     <Event />
+    <Counter />
     </React.Fragment>
 )
     
