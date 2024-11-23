@@ -1,9 +1,9 @@
 
 import { useState } from 'react';
 import './App.css';
-import AddTodo from './Component/Addtodo';
+import AddTodo from './Component/Addtodo';       //Component for adding new todo items
 import AppName from './Component/AppName';
-import TodoItems from './Component/TodoItems';
+import TodoItems from './Component/TodoItems';    // Component rendering the list of todo items
 import WelcomeMessage from './Component/WelcomeMessage';
 
 function App() {
