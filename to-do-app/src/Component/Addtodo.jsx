@@ -3,29 +3,29 @@ import { useState } from "react";
 
 
 function AddTodo({onNewItem}){
-  const [todoName, setTodoName]= useState();
-  const [dueDate, setDueDate]= useState();
+  const [todoName, setTodoName]= useState("");
+  const [dueDate, setDueDate]= useState("");
 
-  const HandleNameChange = (event)=>{
+  const handleNameChange = (event)=>{
     setTodoName(event.target.value);
   }
 
-  const HandleDateChange = (event)=>{
+  const handleDateChange = (event)=>{
     setDueDate(event.target.value);
   }
 
-  const HandleButtonClicked = ()=>{
-    onNewItem(todoName, setDueDate);
+  const handleAddButtonClicked = ()=>{
+    onNewItem(todoName, dueDate);
     setDueDate("");
     setTodoName("");
   };
 
   return(
     <div className="container">
-   <div className="column"><input type ="text" placeholder='Enter your To-Do Here' value={todoName} onChange={HandleNameChange}>
+   <div className="column"><input type ="text" placeholder="Enter your To-Do Here" value={todoName} onChange={handleNameChange}>
    </input></div>
-   <div className="column"><input type="date" value={dueDate} onChange={HandleDateChange}></input></div>
-   <div className="column"><button className='success' style={{backgroundColor:'green'}} onClick={HandleButtonClicked} >Add</button></div>
+   <div className="column"><input type="date" value={dueDate} onChange={handleDateChange}></input></div>
+   <div className="column"><button className='success' style={{backgroundColor:'green'}} onClick={handleAddButtonClicked} >Add</button></div>
  </div>
 
   )

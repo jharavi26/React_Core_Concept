@@ -1,4 +1,4 @@
-function TodoItem({todoName , todoDate , onDeleteClick }){
+function TodoItem({todoName, todoDate, onDeleteClick }){
   return (
     <div className="container">
        <div className="column">{todoName}</div>
@@ -7,7 +7,7 @@ function TodoItem({todoName , todoDate , onDeleteClick }){
        
       
     </div>
-  )
+  );
 }
 
 export default TodoItem;

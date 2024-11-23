@@ -10,11 +10,11 @@ function App() {
 
   const [todoItems, setTodoItems] =useState([]); 
 
-  const handleNewItem = (itemName, itemDueDate)=>{
+  const handleNewItem = (itemName, itemDueDate) =>{
     console.log(`New Item Added, ${itemName} Date:${itemDueDate}`);
     const newTodoItems = [
       ...todoItems,
-      {name : itemName, date : itemDueDate},
+      {name : itemName, dueDate : itemDueDate},
     ];
     setTodoItems(newTodoItems);
     };
@@ -30,8 +30,7 @@ function App() {
       <AppName />
       <AddTodo onNewItem={handleNewItem} />
       {todoItems.length === 0 && <WelcomeMessage></WelcomeMessage>}
-      <TodoItems 
-      todoItems ={todoItems}
+      <TodoItems todoItems ={todoItems}
       onDeleteClick={handleDeleteItem}></TodoItems>
 
     

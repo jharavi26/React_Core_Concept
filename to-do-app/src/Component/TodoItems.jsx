@@ -6,8 +6,8 @@ const TodoItems = ({todoItems, onDeleteClick})=>{
           {todoItems.map((item) =>(
           <TodoItem
           todoDate = {item.dueDate}
-        todoName={item.todoName}
-      onDeleteClick={onDeleteClick}></TodoItem>
+          todoName={item.Name}
+          onDeleteClick={onDeleteClick}></TodoItem>
           ))}
         </div>
       );
