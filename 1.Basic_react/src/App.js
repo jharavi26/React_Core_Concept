@@ -5,6 +5,7 @@ import List from './component/List';
 import Event from './component/Event';
 import Counter from './Hook/State';
 import DynamicBackground from './Hook/Effect';
+import Timer from './Hook/Callback';
 function App() {
   const name ="Rajan";
   const lastname ="Jha"
@@ -17,6 +18,7 @@ return (
     <Event />
     <Counter />
     <DynamicBackground />
+    <Timer />
     </React.Fragment>
     
 )
