@@ -1,6 +1,6 @@
 function AppName(){
   return (
-  <h1>To-Do App</h1>
+  <h1 style={{textAlign : "center"}}>To-Do App</h1>
   )
 
 }

@@ -4,6 +4,7 @@ import Header from './component/Header';
 import List from './component/List';
 import Event from './component/Event';
 import Counter from './Hook/State';
+import DynamicBackground from './Hook/Effect';
 function App() {
   const name ="Rajan";
   const lastname ="Jha"
@@ -15,7 +16,9 @@ return (
     <List/>
     <Event />
     <Counter />
+    <DynamicBackground />
     </React.Fragment>
+    
 )
     
 }
