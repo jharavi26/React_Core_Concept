@@ -16,10 +16,10 @@ function App() {
     <div>
       <h1>Context API</h1>
       <p> Count is {counterState.count}</p>
-      {/* <ControlledForm /> */}
-      {/* <FormWithValidation /> */}
-      {/* <RenderCounter /> */}
-      {/* <Spread /> */}
+      <ControlledForm /> *
+      <FormWithValidation />
+       <RenderCounter /> 
+      <Spread />
       <Counter />
       <Counter />
       <Counter />
