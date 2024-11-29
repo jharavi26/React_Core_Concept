@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import GetUser from "./API"; // Import the GetUser function
+import AxiosAPI from "./Axios";
+import AxiosExample from "./AxiosExample";
+
 
 function App() {
   const [data, setData] = useState([]); // Initialize as an empty array
@@ -14,6 +17,7 @@ function App() {
   return (
     <div>
       <h1>Random Users</h1>
+
     
       {data.length > 0 ? (
         data.map((user, index) => (
@@ -31,6 +35,8 @@ function App() {
       ) : (
         <p>Loading...</p>
       )}
+    <AxiosAPI />
+    <AxiosExample />
     </div>
   );
 }
