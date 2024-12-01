@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import GetUser from "./API"; // Import the GetUser function
 import AxiosAPI from "./Axios";
 import AxiosExample from "./AxiosExample";
+import State from "./Hooks/State";
 
 
 function App() {
@@ -35,8 +36,9 @@ function App() {
       ) : (
         <p>Loading...</p>
       )}
-    <AxiosAPI />
-    <AxiosExample />
+      <State />
+    {/* <AxiosAPI />
+    <AxiosExample /> */}
     </div>
   );
 }
