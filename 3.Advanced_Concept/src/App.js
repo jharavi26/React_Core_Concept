@@ -3,6 +3,10 @@ import GetUser from "./API"; // Import the GetUser function
 import AxiosAPI from "./Axios";
 import AxiosExample from "./AxiosExample";
 import State from "./Hooks/State";
+import Effect from "./Hooks/Effect";
+import PreviousState from "./Hooks/Reference";
+import WithoutUseMemo from "./Hooks/Memo";
+
 
 
 function App() {
@@ -37,6 +41,10 @@ function App() {
         <p>Loading...</p>
       )}
       <State />
+      <Effect />
+      <PreviousState />
+      <WithoutUseMemo />
+      
     {/* <AxiosAPI />
     <AxiosExample /> */}
     </div>
