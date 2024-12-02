@@ -6,6 +6,9 @@ import State from "./Hooks/State";
 import Effect from "./Hooks/Effect";
 import PreviousState from "./Hooks/Reference";
 import WithoutUseMemo from "./Hooks/Memo";
+import SimpleUseCallbackExample from "./Hooks/Callback";
+import Counter from "./Hooks/Reducer";
+
 
 
 
@@ -44,6 +47,9 @@ function App() {
       <Effect />
       <PreviousState />
       <WithoutUseMemo />
+      <SimpleUseCallbackExample />
+      <Counter />
+   
       
     {/* <AxiosAPI />
     <AxiosExample /> */}
