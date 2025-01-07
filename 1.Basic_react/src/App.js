@@ -20,6 +20,8 @@ return (
     <DynamicBackground />
     <Timer />
     </React.Fragment>
+   
+    
     
 )
     
