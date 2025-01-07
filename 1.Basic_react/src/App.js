@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Header from './component/Header';
 import List from './component/List';
@@ -6,6 +6,7 @@ import Event from './component/Event';
 import Counter from './Hook/State';
 import DynamicBackground from './Hook/Effect';
 import Timer from './Hook/Callback';
+import Component1 from './component/class/Component1';
 
 
 
@@ -22,7 +23,7 @@ return (
     <Counter />
     <DynamicBackground />
     <Timer />
-    
+    <Component1 />
     
     </React.Fragment>
     
