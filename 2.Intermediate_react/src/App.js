@@ -6,6 +6,7 @@ import Spread from './Form/spread';
 import RenderCounter from './Hook/ref';
 import Counter from './component/Counter';
 import { CounterContext } from './Context/Counter';
+import UncontrolledForm from './Form/UncontrolledForm';
 
 
 
@@ -21,9 +22,9 @@ function App() {
        <RenderCounter /> 
       <Spread />
       <Counter />
-      <Counter />
-      <Counter />
-      <Counter />
+      <UncontrolledForm />
+      
+      
       
     
     </div>

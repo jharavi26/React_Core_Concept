@@ -1,5 +1,5 @@
 // The useRef hook in React provides a way to create a mutable reference that persists across renders.
-//  It’s commonly used for accessing and manipulating DOM elements or storing values that don’t trigger a re-render when changed.
+// It’s commonly used for accessing and manipulating DOM elements or storing values that don’t trigger a re-render when changed.
 
 import React, { useRef, useState } from "react";
 
