@@ -14,6 +14,7 @@ export default class Component1 extends Component {
         <p>This is Class-Based Component</p>
         <h1>{this.state.count}</h1>
         <button onClick={this.handleButton}>Increment</button>
+        <p>Username is {this.props.username}</p>
         
       </div>
     )

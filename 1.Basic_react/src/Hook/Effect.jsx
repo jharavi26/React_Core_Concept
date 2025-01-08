@@ -1,8 +1,15 @@
 //The useEffect hook is one of the most important and commonly used hooks in React. It allows you to perform side effects in functional components.
+//Perform LifeCycle Method
+//Eliminate a side-effect
+//Communication with External World
 //Data fetching, Subscribing to events, Manipulating the DOM, Setting up timers or intervals
 
+// useEffect(()=>{                    simple Syntax of UseEffect
+
+// },[])          Empty dependency array ensures it runs only once
+
 //useEffect(() => {
-  // Effect logic (e.g., fetch data, event listeners)
+// Effect logic (e.g., fetch data, event listeners)
 //   return () => {
 //        Cleanup logic (e.g., remove event listeners)
 //   };

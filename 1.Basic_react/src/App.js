@@ -23,7 +23,7 @@ return (
     <Counter />
     <DynamicBackground />
     <Timer />
-    <Component1 />
+    <Component1 username="Art"/>
     
     </React.Fragment>
     
