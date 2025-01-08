@@ -1,10 +1,19 @@
 import React, { Component } from 'react'
 
 export default class Component1 extends Component {
+  constructor(){
+    super()
+    this.state = {count:0} 
+  }
+  handleButton = ()=>{
+    this.setState({count:this.state.count+1})
+  }
   render() {                                            //Display UI 
     return (
       <div>
         <p>This is Class-Based Component</p>
+        <h1>{this.state.count}</h1>
+        <button onClick={this.handleButton}>Increment</button>
         
       </div>
     )
