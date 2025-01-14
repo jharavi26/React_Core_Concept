@@ -7,6 +7,7 @@ import RenderCounter from './Hook/ref';
 import Counter from './component/Counter';
 import { CounterContext } from './Context/Counter';
 import UncontrolledForm from './Form/UncontrolledForm';
+import Reducer from './Hook/Reducer';
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Spread />
       <Counter />
       <UncontrolledForm />
+      <Reducer />
       
       
       
