@@ -8,6 +8,7 @@ import PreviousState from "./Hooks/Reference";
 import WithoutUseMemo from "./Hooks/Memo";
 import SimpleUseCallbackExample from "./Hooks/Callback";
 import Counter from "./Hooks/Reducer";
+import Calculation from "./Advanced/Calculation";
 
 
 
@@ -49,6 +50,8 @@ function App() {
       <WithoutUseMemo />
       <SimpleUseCallbackExample />
       <Counter />
+      <Calculation />
+      
    
       
     {/* <AxiosAPI />
