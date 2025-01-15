@@ -1,20 +1,13 @@
-// Error boundaries in React are components designed to catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the whole application. They help improve the user experience by gracefully handling errors at runtime.
-
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import useCustome from '../Hooks/useCustome'
 
 function Calculation() {
-  const [count, setCount] = useState(1)
-
-  useEffect(()=>{
-    if(count === 13){
-      throw new Error ("App Damaged"); 
-    }
-  })
-
+  const {count, increment, decrement} = useCustome()
   return (
     <div>
-      <p>Count is : {count}</p>
-      <button onClick={()=>setCount(count+4)}>Increment</button>
+      <h1>Counter is :{count} </h1>
+      <button onClick = {()=>increment()}>Addition</button>
+      <button onClick = {()=>decrement()}>Substraction</button>
       
     </div>
   )
